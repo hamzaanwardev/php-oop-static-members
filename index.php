@@ -15,13 +15,16 @@
     <?php
         class personal {
             public static $name = "Hamza Anwar";
-            public function show() {
+            public static function show() {
                 echo self::$name;
             }
         }
 
-        $test = new personal();
-        $test->show();
+        echo personal::$name . "<br>";
+        personal::show();
+
+        // $test = new personal();
+        // $test->show();
     ?>
 </body>
 </html>
