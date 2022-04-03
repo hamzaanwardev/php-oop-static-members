@@ -16,9 +16,12 @@
         class personal {
             public static $name = "Hamza Anwar";
             public function show() {
-                echo this->name;
+                echo self::$name;
             }
         }
+
+        $test = new personal();
+        $test->show();
     ?>
 </body>
 </html>
