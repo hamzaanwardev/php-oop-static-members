@@ -12,6 +12,13 @@
     <p>But with Static Members we can use properties and methods of class without making object.</p>
     <p>You will be really thinking in PHP Object Oriented Programming how can we use Properties and classes without making object So, have a look Please how i am doing this?</p>
 
-    
+    <?php
+        class personal {
+            public static $name = "Hamza Anwar";
+            public function show() {
+                echo this->name;
+            }
+        }
+    ?>
 </body>
 </html>
