@@ -16,22 +16,19 @@
     <?php
         class personal {
             public static $name = "Hamza Anwar";
-            public static function show() {
-                echo self::$name;
-            }
         }
         class accounts extends personal {
-        
-            echo parent::show();
+            public static function show() {
+            echo parent::$name;
+            }
         }
         // echo personal::$name . "<br>";
         // personal::show();
 
-        // $test = new personal();
-        // $test->show();
+        $test = new accounts();
+        $test->show();
     ?>
 
-    <h2>Using Static Members In Inherit class.</h2>
 
 </body>
 </html>
